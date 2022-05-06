@@ -1,2 +1,2 @@
-# Clase.19.04.2022
+# Tabla de Multiplicar
 Created with CodeSandbox
