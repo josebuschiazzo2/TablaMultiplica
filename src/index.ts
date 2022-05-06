@@ -1,9 +1,13 @@
-import "./styles.css";
+/*Tabla de Multiplicación*/
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>`;
+let num:number= Number(prompt("Ingrese el número (entero) para la tabla"));
+let until:number= Number(prompt("Ingrese hasta que Número (entero)"));
+
+// pregunto primero si introdujo números y entero
+if (isNaN(num) || isNaN(until) || (num%1) || (until%1)) {
+  alert ("Solo son validos los números enteros");
+}else {
+  for (let i=0; i<(until+1); i++){
+  console.log(num + "*" + i + "=" + (i*num));
+    } 
+  }
